@@ -87,7 +87,7 @@ const defaultProps = {
   currentLang: "EN",
   cakePriceUsd: 0.023158668932877668,
   links,
-  subLinks: links[0].items,
+  subLinks: (links && links[0] && links[0].items? links[0].items : [] ),
   footerLinks,
   profile: null,
   userMenu: <UserMenuComponent account="0xbdda50183d817c3289f895a4472eb475967dc980" />,
@@ -136,7 +136,7 @@ export const NotConnected: React.FC = () => {
         setLang={noop}
         currentLang="EN"
         links={links}
-        subLinks={subLinks}
+        subLinks={defaultProps.subLinks}
         footerLinks={footerLinks}
       >
         <div>
@@ -167,7 +167,7 @@ export const WithoutConnectButton: React.FC = () => {
         currentLang="EN"
         links={links}
         footerLinks={footerLinks}
-        subLinks={subLinks}
+        subLinks={defaultProps.subLinks? defaultProps.subLinks : []}
       >
         <div>
           <h1>No connect button on top</h1>
@@ -189,7 +189,7 @@ export const WithSubmenuSelected: React.FC = () => {
         currentLang="EN"
         cakePriceUsd={0.23158668932877668}
         links={links}
-        subLinks={subLinks}
+        subLinks={defaultProps.subLinks? defaultProps.subLinks : []}
         footerLinks={footerLinks}
       >
         <div>

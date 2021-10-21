@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
 import Flex from "../../../components/Box/Flex";
 import { LogoIcon, LogoWithTextIcon } from "../../../components/Svg";
+import LogoPlanetText from "../../../components/Images/planettextsvg.svg";
+import LogoPlanet from "../../../components/Images/planetlogo.svg";
 
 interface Props {
   isDark: boolean;
@@ -48,8 +50,8 @@ const Logo: React.FC<Props> = ({ isDark, href }) => {
   const isAbsoluteUrl = href.startsWith("http");
   const innerLogo = (
     <>
-      <LogoIcon className="mobile-icon" />
-      <LogoWithTextIcon className="desktop-icon" isDark={isDark} />
+      <img src={LogoPlanet} alt="Logo" width="30px" className="mobile-icon"/>
+      <img src={LogoPlanetText} alt="Logo" width="160px" className="desktop-icon"/>
     </>
   );
 

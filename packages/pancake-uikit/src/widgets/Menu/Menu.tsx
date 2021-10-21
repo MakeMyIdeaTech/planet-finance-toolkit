@@ -13,6 +13,7 @@ import Logo from "./components/Logo";
 import { MENU_HEIGHT, MOBILE_MENU_HEIGHT } from "./config";
 import { NavProps } from "./types";
 import LangSelector from "../../components/LangSelector/LangSelector";
+import { LabelText } from "./components/UserMenu";
 
 const Wrapper = styled.div`
   position: relative;
@@ -102,7 +103,8 @@ const Menu: React.FC<NavProps> = ({
 
   // Find the home link if provided
   const homeLink = links.find((link) => link.label === "Home");
-
+  const account = "0x72b7d61e8fc8cf971960dd9cfa59b8c829d91991";
+  const accountEllipsis = account ? `${account.substring(0, 2)}...${account.substring(account.length - 4)}` : null;
   return (
     <Wrapper>
       <StyledNav showMenu={showMenu}>
@@ -116,17 +118,7 @@ const Menu: React.FC<NavProps> = ({
               <CakePrice cakePriceUsd={cakePriceUsd} />
             </Box>
           )}
-          <Box mt="4px">
-            <LangSelector
-              currentLang={currentLang}
-              langs={langs}
-              setLang={setLang}
-              buttonScale="xs"
-              color="textSubtle"
-              hideLanguage
-            />
-          </Box>
-          {globalMenu} {userMenu}
+          <LabelText title={account}>{accountEllipsis}</LabelText>
         </Flex>
       </StyledNav>
       {subLinks && <SubMenuItems items={subLinks} mt={`${MENU_HEIGHT + 1}px`} activeItem={activeSubItem} />}
