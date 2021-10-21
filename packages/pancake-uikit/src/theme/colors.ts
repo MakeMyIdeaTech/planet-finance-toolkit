@@ -1,12 +1,12 @@
 import { Colors } from "./types";
 
 export const baseColors = {
-  failure: "#ED4B9E",
-  primary: "#1FC7D4",
+  failure: "#FF5555", 
+  primary: "#55FF76", 
   primaryBright: "#53DEE9",
   primaryDark: "#0098A1",
-  secondary: "#7645D9",
-  success: "#31D0AA",
+  secondary: "#55B7FF",
+  success: "#55FF76",
   warning: "#FFB237",
 };
 
@@ -51,12 +51,12 @@ export const lightColors: Colors = {
 export const darkColors: Colors = {
   ...baseColors,
   ...additionalColors,
-  secondary: "#9A6AFF",
+  secondary: "#55B7FF",
   background: "#08060B",
   backgroundDisabled: "#3c3742",
-  backgroundAlt: "#27262c",
+  backgroundAlt: "#000000",
   backgroundAlt2: "rgba(39, 38, 44, 0.7)",
-  cardBorder: "#383241",
+  cardBorder: "#000000",
   contrast: "#FFFFFF",
   dropdown: "#1E1D20",
   dropdownDeep: "#100C18",
