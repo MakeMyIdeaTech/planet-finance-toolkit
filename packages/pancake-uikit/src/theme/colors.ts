@@ -8,6 +8,13 @@ export const baseColors = {
   secondary: "#55B7FF",
   success: "#55FF76",
   warning: "#FFB237",
+  greenShade: "rgb(85,255,118,0.2)",
+  redShade: "rgb(255,85,222,0.2)",
+  toggleButtonActive: "linear-gradient(180deg, #A7E8F1 0%, #94E1F2 100%)",/* "linear-gradient(270deg, rgb(48, 55, 218) 0%, rgb(85, 183, 255) 100%) 0% 0% no-repeat padding-box padding-box", */
+  white: "#FFFFFF",
+  black:"#000000",
+  bluePlanetGradient:"transparent linear-gradient(143deg, #55B7FF 0%, #3037DA 51%, #1F123E 100%) 0% 0% no-repeat padding-box;",
+  transparent: "transparent"
 };
 
 export const additionalColors = {
