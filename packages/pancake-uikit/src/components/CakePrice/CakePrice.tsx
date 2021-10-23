@@ -31,7 +31,7 @@ const CakePrice: React.FC<Props> = ({ cakePriceUsd, color = "textSubtle" }) => {
       target="_blank"
     >
       <img src={LogoPlanet} alt="Logo" width="24px"/>
-      <Text color={color} bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
+      <Text color={color} bold ml="6px">{`$${cakePriceUsd.toFixed(3)}`}</Text>
     </PriceLink>
   ) : (
     <Skeleton width={80} height={24} />
