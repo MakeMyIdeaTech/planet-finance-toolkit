@@ -63,6 +63,13 @@ export type Colors = {
   textDisabled: string;
   textSubtle: string;
   disabled: string;
+  greenShade: string;
+  redShade: string;
+  toggleButtonActive: string;
+  bluePlanetGradient: string;
+  white: string;
+  black: string;
+  transparent: string;
 
   // Gradients
   gradients: Gradients;

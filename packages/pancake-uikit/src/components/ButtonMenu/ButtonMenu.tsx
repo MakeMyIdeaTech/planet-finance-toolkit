@@ -9,11 +9,16 @@ interface StyledButtonMenuProps extends ButtonMenuProps {
 }
 
 const getBackgroundColor = ({ theme, variant }: StyledButtonMenuProps) => {
-  return theme.colors[variant === variants.SUBTLE ? "input" : "tertiary"];
+  /* return theme.colors[variant === variants.SUBTLE ? "input" : "tertiary"]; */
+  return theme.colors.transparent;
 };
 
 const getBorderColor = ({ theme, variant }: StyledButtonMenuProps) => {
   return theme.colors[variant === variants.SUBTLE ? "inputSecondary" : "disabled"];
+};
+
+const getButtonColor = ({ theme, variant }: StyledButtonMenuProps) => {
+  return theme.colors.greenShade;
 };
 
 const StyledButtonMenu = styled.div<StyledButtonMenuProps>`
@@ -22,7 +27,7 @@ const StyledButtonMenu = styled.div<StyledButtonMenuProps>`
   display: ${({ fullWidth }) => (fullWidth ? "flex" : "inline-flex")};
   border: 1px solid ${getBorderColor};
   width: ${({ fullWidth }) => (fullWidth ? "100%" : "auto")};
-
+  color: ${getButtonColor};
   & > button,
   & > a {
     flex: ${({ fullWidth }) => (fullWidth ? 1 : "auto")};
@@ -45,7 +50,7 @@ const StyledButtonMenu = styled.div<StyledButtonMenuProps>`
 
         & > button:disabled {
           background-color: transparent;
-          color: ${variant === variants.PRIMARY ? theme.colors.primary : theme.colors.textSubtle};
+          color: ${variant === variants.PRIMARY ? theme.colors.black : theme.colors.black};
         }
     `;
     }
