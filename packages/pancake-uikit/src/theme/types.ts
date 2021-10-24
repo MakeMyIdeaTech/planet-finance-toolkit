@@ -70,6 +70,8 @@ export type Colors = {
   white: string;
   black: string;
   transparent: string;
+  buttonGradient: string;
+  activeButtonBG: string;
 
   // Gradients
   gradients: Gradients;
