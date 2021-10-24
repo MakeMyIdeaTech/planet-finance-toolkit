@@ -2,7 +2,7 @@ import { Colors } from "./types";
 
 export const baseColors = {
   failure: "#FF5555", 
-  primary: "rgba(85,255,118,0.2)", 
+  primary: "#55B7FF", 
   primaryBright: "#53DEE9",
   primaryDark: "#0098A1",
   secondary: "#55B7FF",
@@ -10,11 +10,13 @@ export const baseColors = {
   warning: "#FFB237",
   greenShade: "rgb(85,255,118,0.2)",
   redShade: "rgb(255,85,222,0.2)",
-  toggleButtonActive: "linear-gradient(180deg, #A7E8F1 0%, #94E1F2 100%)",/* "linear-gradient(270deg, rgb(48, 55, 218) 0%, rgb(85, 183, 255) 100%) 0% 0% no-repeat padding-box padding-box", */
+  toggleButtonActive: "linear-gradient(270deg, rgb(48, 55, 218) 0%, rgb(85, 183, 255) 100%) 0% 0% no-repeat padding-box padding-box", 
   white: "#FFFFFF",
   black:"#000000",
   bluePlanetGradient:"transparent linear-gradient(143deg, #55B7FF 0%, #3037DA 51%, #1F123E 100%) 0% 0% no-repeat padding-box;",
-  transparent: "transparent"
+  transparent: "transparent",
+  buttonGradient:"transparent linear-gradient(270deg, #3037DA 0%, #55B7FF 100%) 0% 0% no-repeat padding-box;",
+  activeButtonBG:"#55B7FF33"
 };
 
 export const additionalColors = {
@@ -30,7 +32,7 @@ export const lightColors: Colors = {
   ...additionalColors,
   background: "#FAF9FA",
   backgroundDisabled: "#E9EAEB",
-  backgroundAlt: "rgba(85,183,255,0.2)",
+  backgroundAlt: "#FFFFFF", /* "rgba(85,183,255,0.2)", */
   backgroundAlt2: "rgba(255, 255, 255, 0.7)",
   cardBorder: "#E7E3EB",
   contrast: "#191326",
@@ -40,7 +42,7 @@ export const lightColors: Colors = {
   input: "#000",
   inputSecondary: "#d7caec",
   tertiary: "#EFF4F5",
-  text: "#55B7FF",
+  text: "#FFFFFF",
   textDisabled: "#BDC2C4",
   textSubtle: "rgba(255,255,255,0.2)",
   disabled: "#E9EAEB",
@@ -72,7 +74,7 @@ export const darkColors: Colors = {
   inputSecondary: "#262130",
   primaryDark: "#0098A1",
   tertiary: "#353547",
-  text: "#55B7FF",
+  text: "#FFFFFF",
   textDisabled: "#666171",
   textSubtle: "rgba(255,255,255,0.2)",
   disabled: "#524B63",

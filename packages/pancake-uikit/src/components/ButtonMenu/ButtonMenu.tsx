@@ -18,7 +18,7 @@ const getBorderColor = ({ theme, variant }: StyledButtonMenuProps) => {
 };
 
 const getButtonColor = ({ theme, variant }: StyledButtonMenuProps) => {
-  return theme.colors.greenShade;
+  return theme.colors.toggleButtonActive;
 };
 
 const StyledButtonMenu = styled.div<StyledButtonMenuProps>`
