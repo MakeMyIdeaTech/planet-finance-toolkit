@@ -9,6 +9,7 @@ import {
   StyledListItem,
   StyledSocialLinks,
   StyledToolsContainer,
+  BackgroundCircle
 } from "./styles";
 import { FooterProps } from "./types";
 import { ThemeSwitcher } from "../ThemeSwitcher";
@@ -31,6 +32,8 @@ const MenuItem: React.FC<FooterProps> = ({
   ...props
 }) => {
   return (
+    <>
+    <BackgroundCircle />
     <StyledFooter p={["40px 16px", null, "56px 40px 32px 40px"]} {...props} justifyContent="center">
       <Flex flexDirection="column" width={["100%", null, "1200px;"]}>
         <StyledIconMobileContainer display={["block", null, "none"]}>
@@ -43,6 +46,7 @@ const MenuItem: React.FC<FooterProps> = ({
           alignItems="flex-start"
           mb={["42px", null, "36px"]}
         >
+          
           <Box display={["none", null, "block"]}>
             <img src={Logo} alt="Logo" width="160px" />;
           </Box>
@@ -67,6 +71,7 @@ const MenuItem: React.FC<FooterProps> = ({
         </Flex>
       </Flex>
     </StyledFooter>
+    </>
   );
 };
 
