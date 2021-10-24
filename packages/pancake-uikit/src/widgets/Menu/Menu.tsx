@@ -21,6 +21,7 @@ const Wrapper = styled.div`
 `;
 
 const StyledNav = styled.nav<{ showMenu: boolean }>`
+  opacity: 0.6;
   position: fixed;
   top: ${({ showMenu }) => (showMenu ? 0 : `-${MENU_HEIGHT}px`)};
   left: 0;
