@@ -7,6 +7,7 @@ export interface MenuItemProps {
   href: string;
   variant?: MenuItemVariant;
   statusColor?: keyof Colors;
+  type?: MenuItemType;
 }
 
 export type StyledMenuItemProps = {
@@ -14,3 +15,10 @@ export type StyledMenuItemProps = {
   $variant?: MenuItemVariant;
   $statusColor?: keyof Colors;
 };
+
+export enum MenuItemType {
+  INTERNAL_LINK,
+  EXTERNAL_LINK,
+  BUTTON,
+  DIVIDER,
+}
