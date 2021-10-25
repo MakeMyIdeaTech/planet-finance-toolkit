@@ -9,7 +9,8 @@ import {
   StyledListItem,
   StyledSocialLinks,
   StyledToolsContainer,
-  BackgroundCircleImg
+  BackgroundCircleImg,
+  BackgroundCircleImgMobile
 } from "./styles";
 import { FooterProps } from "./types";
 import { ThemeSwitcher } from "../ThemeSwitcher";
@@ -20,6 +21,7 @@ import BackgroundPlanet from "../Images/bg-planet-icon.45e584d8.svg";
 import Logo from "../Images/planettextsvg.svg";
 import { Button } from "../Button";
 import { Colors } from "../..";
+import { useMatchBreakpoints } from "../../hooks";
 
 const MenuItem: React.FC<FooterProps> = ({
   items,
@@ -32,9 +34,14 @@ const MenuItem: React.FC<FooterProps> = ({
   buyCakeLabel,
   ...props
 }) => {
+  const { isMobile } = useMatchBreakpoints();
   return (
     <StyledFooter p={["40px 16px", null, "56px 40px 32px 40px"]} {...props} justifyContent="center">
-      <BackgroundCircleImg src="/images/bg-planet-icon.45e584d8.png" />
+      {isMobile?
+        <BackgroundCircleImgMobile src="/images/bg-planet-icon.45e584d8.png" />
+        :
+        <BackgroundCircleImg src="/images/bg-planet-icon.45e584d8.png" />
+      }
       <Flex style={{zIndex:99, position:"relative"}} flexDirection="column" width={["100%", null, "1200px;"]} position="relative">
         <StyledIconMobileContainer display={["block", null, "none"]}>
           <LogoWithTextIcon isDark width="130px" />

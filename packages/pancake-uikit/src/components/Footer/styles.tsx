@@ -64,3 +64,14 @@ export const BackgroundCircleImg = styled.img`
   height: 200px;
   transform: matrix(1, 0.05, -0.05, 1, 0, 0);
 `;
+
+export const BackgroundCircleImgMobile = styled.img`
+  position: absolute;
+  z-index: 0;
+  box-shadow: 0px 3px 5px #00000033;
+  top: 30px;
+  right: 10px;
+  width: 200px;
+  height: 200px;
+  transform: matrix(1, 0.05, -0.05, 1, 0, 0);
+`;
