@@ -54,10 +54,7 @@ export const StyledSocialLinks = styled(SocialLinks)`
   border-bottom: 1px solid ${darkColors.cardBorder};
 `;
 
-export const BackgroundCircle = styled.div`
-  background: transparent linear-gradient(143deg, #55B7FF 0%, #3037DA 51%, #1F123E 100%) 0% 0% no-repeat padding-box;
-  border-radius: 50%;
-  aspect-ratio: 1/1;
+export const BackgroundCircleImg = styled.img`
   position: absolute;
   z-index: 0;
   box-shadow: 0px 3px 5px #00000033;
