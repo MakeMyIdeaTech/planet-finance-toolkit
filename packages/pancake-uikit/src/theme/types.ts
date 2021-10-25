@@ -37,6 +37,7 @@ export type Gradients = {
   violet: string;
   violetAlt: string;
   gold: string;
+  buttonGradientBG: string;
 };
 
 export type Colors = {
@@ -72,7 +73,7 @@ export type Colors = {
   transparent: string;
   buttonGradient: string;
   activeButtonBG: string;
-
+  buttonGradientBG: string,
   // Gradients
   gradients: Gradients;
 
