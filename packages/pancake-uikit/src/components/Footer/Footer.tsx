@@ -9,13 +9,14 @@ import {
   StyledListItem,
   StyledSocialLinks,
   StyledToolsContainer,
-  BackgroundCircle
+  BackgroundCircleImg
 } from "./styles";
 import { FooterProps } from "./types";
 import { ThemeSwitcher } from "../ThemeSwitcher";
 import LangSelector from "../LangSelector/LangSelector";
 import CakePrice from "../CakePrice/CakePrice";
 import { LogoWithTextIcon, ArrowForwardIcon } from "../Svg";
+import BackgroundPlanet from "../Images/bg-planet-icon.45e584d8.svg";
 import Logo from "../Images/planettextsvg.svg";
 import { Button } from "../Button";
 import { Colors } from "../..";
@@ -33,7 +34,7 @@ const MenuItem: React.FC<FooterProps> = ({
 }) => {
   return (
     <StyledFooter p={["40px 16px", null, "56px 40px 32px 40px"]} {...props} justifyContent="center">
-      <BackgroundCircle />
+      <BackgroundCircleImg src="/images/bg-planet-icon.45e584d8.png" />
       <Flex style={{zIndex:99, position:"relative"}} flexDirection="column" width={["100%", null, "1200px;"]} position="relative">
         <StyledIconMobileContainer display={["block", null, "none"]}>
           <LogoWithTextIcon isDark width="130px" />
