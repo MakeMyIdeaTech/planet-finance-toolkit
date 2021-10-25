@@ -44,7 +44,7 @@ const MenuItem: React.FC<FooterProps> = ({
       }
       <Flex style={{zIndex:99, position:"relative"}} flexDirection="column" width={["100%", null, "1200px;"]} position="relative">
         <StyledIconMobileContainer display={["block", null, "none"]}>
-          <LogoWithTextIcon isDark width="130px" />
+          <img src={Logo} alt="Logo" width="130px" />;
         </StyledIconMobileContainer>
         <Flex
           order={[2, null, 1]}
