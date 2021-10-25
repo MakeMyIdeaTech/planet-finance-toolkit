@@ -10,7 +10,7 @@ export const baseColors = {
   warning: "#FFB237",
   greenShade: "rgb(85,255,118,0.2)",
   redShade: "rgb(255,85,222,0.2)",
-  toggleButtonActive: "linear-gradient(270deg, rgb(48, 55, 218) 0%, rgb(85, 183, 255) 100%) 0% 0% no-repeat padding-box padding-box", 
+  toggleButtonActive: "transparent linear-gradient(143deg, #55B7FF 0%, #3037DA 51%, #1F123E 100%) 0% 0% no-repeat padding-box;", 
   white: "#FFFFFF",
   black:"#000000",
   bluePlanetGradient:"transparent linear-gradient(143deg, #55B7FF 0%, #3037DA 51%, #1F123E 100%) 0% 0% no-repeat padding-box;",
@@ -46,6 +46,7 @@ export const lightColors: Colors = {
   textDisabled: "#BDC2C4",
   textSubtle: "rgba(255,255,255,0.2)",
   disabled: "#E9EAEB",
+  buttonGradientBG: "linear-gradient(270deg, #3037DA 0%, #55B7FF 100%)",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #E5FDFF 0%, #F3EFFF 100%)",
     inverseBubblegum: "linear-gradient(139.73deg, #F3EFFF 0%, #E5FDFF 100%)",
@@ -54,6 +55,7 @@ export const lightColors: Colors = {
     violet: "linear-gradient(180deg, #E2C9FB 0%, #CDB8FA 100%)",
     violetAlt: "linear-gradient(180deg, #CBD7EF 0%, #9A9FD0 100%)",
     gold: "linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)",
+    buttonGradientBG: "linear-gradient(270deg, #3037DA 0%, #55B7FF 100%)",
   },
 };
 
@@ -78,6 +80,7 @@ export const darkColors: Colors = {
   textDisabled: "#666171",
   textSubtle: "rgba(255,255,255,0.2)",
   disabled: "#524B63",
+  buttonGradientBG: "linear-gradient(270deg, #3037DA 0%, #55B7FF 100%)",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
     inverseBubblegum: "linear-gradient(139.73deg, #3D2A54 0%, #313D5C 100%)",
@@ -86,5 +89,6 @@ export const darkColors: Colors = {
     violet: "linear-gradient(180deg, #6C4999 0%, #6D4DB2 100%)",
     violetAlt: "linear-gradient(180deg, #434575 0%, #66578D 100%)",
     gold: "linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)",
+    buttonGradientBG: "linear-gradient(270deg, #3037DA 0%, #55B7FF 100%)",
   },
 };
