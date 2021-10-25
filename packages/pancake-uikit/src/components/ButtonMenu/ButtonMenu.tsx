@@ -33,10 +33,6 @@ const StyledButtonMenu = styled.div<StyledButtonMenuProps>`
     flex: ${({ fullWidth }) => (fullWidth ? 1 : "auto")};
   }
 
-  & > button {
-    background: ${getButtonColor};
-  }
-
   & > button + button,
   & > a + a {
     margin-left: 2px; // To avoid focus shadow overlap
