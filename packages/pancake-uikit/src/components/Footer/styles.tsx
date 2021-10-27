@@ -6,7 +6,7 @@ import SocialLinks from "./Components/SocialLinks";
 export const StyledFooter = styled(Flex)`
   background: ${darkColors.backgroundAlt};
   z-index: 99;
-  opacity: 0.6;
+  opacity: 1;
 `;
 
 export const StyledList = styled.ul`

@@ -21,7 +21,7 @@ const Wrapper = styled.div`
 `;
 // backdrop-filter: blur(50px);
 const StyledNav = styled.nav<{ showMenu: boolean }>`
-  opacity: 0.6;
+  opacity: 1;
   position: fixed;
   top: ${({ showMenu }) => (showMenu ? 0 : `-${MENU_HEIGHT}px`)};
   left: 0;
@@ -31,8 +31,8 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   align-items: center;
   width: 100%;
   height: ${MENU_HEIGHT}px;
-  background-color: #000;
-  border-bottom: 1px solid #FFFFFF26;
+  background-color: rgb(0, 0, 0, 0.6);
+  border-bottom: 1px solid #FFFFFF26;  
   z-index: 20;
   transform: translate3d(0, 0, 0);
   padding-left: 16px;
