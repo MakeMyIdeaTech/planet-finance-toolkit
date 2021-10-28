@@ -37,12 +37,12 @@ const MenuItem: React.FC<FooterProps> = ({
   const { isMobile } = useMatchBreakpoints();
   return (
     <StyledFooter p={["40px 16px", null, "56px 40px 32px 40px"]} {...props} justifyContent="center">
-      { isMobile?
-        <BackgroundCircleImgMobile src="/images/bg-planet-icon.45e584d8.png" />
-        :
-        <BackgroundCircleImg src="/images/bg-planet-icon.45e584d8.png" />
-      }
       <Flex style={{zIndex:99, position:"relative"}} flexDirection="column" width={["100%", null, "1200px;"]} position="relative">
+        { isMobile?
+          <BackgroundCircleImgMobile src="/images/bg-planet-icon.45e584d8.png" />
+          :
+          <BackgroundCircleImg src="/images/bg-planet-icon.45e584d8.png" />
+        }
         <StyledIconMobileContainer display={["block", null, "none"]}>
           <img src={Logo} alt="Logo" width="130px" />;
         </StyledIconMobileContainer>

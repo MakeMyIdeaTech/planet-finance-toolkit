@@ -62,7 +62,7 @@ export const BackgroundCircleImg = styled.img`
   position: absolute;
   z-index: 0;
   box-shadow: 0px 3px 5px #00000033;
-  top: 30px;
+  top: -20px;
   left: 100px;
   width: 200px;
   height: 200px;
