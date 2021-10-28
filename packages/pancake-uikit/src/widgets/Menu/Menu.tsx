@@ -37,6 +37,8 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   transform: translate3d(0, 0, 0);
   padding-left: 16px;
   padding-right: 16px;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
 `;
 
 const BodyWrapper = styled(Box)`
