@@ -68,6 +68,7 @@ const MenuItem: React.FC<FooterProps> = ({
                     rel="noreferrer noopener"
                     color={isHighlighted ? baseColors.warning : darkColors.text}
                     bold={false}
+                    style={{opacity:0.4}}
                   >
                     {label}
                   </Link>
