@@ -22,9 +22,11 @@ export const styleVariants = {
     color: "white"
   },
   [variants.GRADIENT]: {
-    backgroundColor: "primary",
-    color: "white",
-    background: "linear-gradient(270deg, rgb(48, 55, 218) 0%, rgb(85, 183, 255) 100%) 0% 0% no-repeat padding-box padding-box"
+    background: "#112533 0% 0% no-repeat padding-box",
+    borderRadius: "15px",
+    color: "#55B7FF",
+    font: "normal normal bold",
+    letterSpacing: "0px"
   },
   [variants.SECONDARY]: {
     backgroundColor: "#00000033",
