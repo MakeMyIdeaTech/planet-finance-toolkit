@@ -59,7 +59,7 @@ const MenuItem: React.FC<FooterProps> = ({
           </Box>
           {items?.map((item) => (
             <StyledList key={item.label}>
-              <StyledListItem>{item.label}</StyledListItem>
+              <StyledListItem style={{marginBottom: "20px"}}>{item.label}</StyledListItem>
               {item.items?.map(({ label, href, isHighlighted = false }) => (
                 <StyledListItem key={label}>
                   <Link
