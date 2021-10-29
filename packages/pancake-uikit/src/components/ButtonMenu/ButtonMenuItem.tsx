@@ -16,6 +16,7 @@ const InactiveButton: PolymorphicComponent<InactiveButtonProps, "button"> = styl
   }
   background: none !important;
   padding: 10px 20px;
+  opacity: 0.4;
 `;
 
 const ButtonMenuItem: PolymorphicComponent<ButtonMenuItemProps, "button"> = ({
