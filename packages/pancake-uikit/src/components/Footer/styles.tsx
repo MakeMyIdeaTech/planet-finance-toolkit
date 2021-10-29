@@ -75,10 +75,8 @@ export const BackgroundCircleImgMobile = styled.img`
   position: absolute;
   z-index: 0;
   box-shadow: 0px 3px 5px #00000033;
-  top: 30px;
-  right: -90px;
-  width: 200px;
+  top: -5px;
+  right: -16px;
   height: 200px;
-  transform: matrix(1, 0.05, -0.05, 1, 0, 0);
   opacity: 0.2;
 `;

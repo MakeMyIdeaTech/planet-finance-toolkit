@@ -39,7 +39,7 @@ const MenuItem: React.FC<FooterProps> = ({
     <StyledFooter p={["40px 16px", null, "56px 40px 32px 40px"]} {...props} justifyContent="center" style={{border: "1px solid #FFFFFF26"}}>
       <Flex style={{zIndex:99, position:"relative"}} flexDirection="column" width={["100%", null, "1200px;"]} position="relative">
         { isMobile?
-          <BackgroundCircleImgMobile src="/images/bg-planet-icon.45e584d8.png" />
+          <BackgroundCircleImgMobile src="/images/footermobile.png" />
           :
           <BackgroundCircleImg src="/images/bg-planet-icon.45e584d8.png" />
         }
