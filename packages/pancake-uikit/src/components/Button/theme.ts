@@ -27,13 +27,14 @@ export const styleVariants = {
     background: "linear-gradient(270deg, rgb(48, 55, 218) 0%, rgb(85, 183, 255) 100%) 0% 0% no-repeat padding-box padding-box"
   },
   [variants.SECONDARY]: {
-    backgroundColor: "transparent",
+    backgroundColor: "#00000033",
     border: "2px solid",
     borderColor: "primary",
     boxShadow: "none",
+    backdropFilter: "blur(50px)",
     color: "primary",
     ":disabled": {
-      backgroundColor: "transparent",
+      backgroundColor: "#000",
     },
   },
   [variants.TERTIARY]: {
