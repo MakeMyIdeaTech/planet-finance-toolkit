@@ -42,6 +42,20 @@ const StyledMenuItem = styled.a<StyledMenuItemProps>`
     }
   `}
 
+  ${({ $isActive }) =>
+    $isActive &&
+    `
+    &:after {
+      content: "";
+      border-radius: 3px;
+      background: #55B7FF;
+      height: 4px;
+      width: 4px;
+      margin-left: 2px;
+      margin-top: -11px;
+    }
+  `}
+
   ${({ $variant }) =>
     $variant === "default"
       ? `
