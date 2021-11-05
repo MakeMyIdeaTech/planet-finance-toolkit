@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { PancakeRoundIcon } from "../Svg";
+import { formatAmount } from "../../util/formatInfoNumbers";
 import LogoPlanet from "../Images/planetlogo.svg";
 import Text from "../Text/Text";
 import Skeleton from "../Skeleton/Skeleton";
@@ -25,13 +26,14 @@ const PriceLink = styled.a`
 `;
 
 const CakePrice: React.FC<Props> = ({ cakePriceUsd, color = "textSubtle" }) => {
+  let price = formatAmount(cakePriceUsd, { notation: 'standard' });
   return cakePriceUsd ? (
     <PriceLink
       href="https://blue.planetfinance.io/"
       target="_blank"
     >
       <img src={LogoPlanet} alt="Logo" width="24px"/>
-      <Text color={"rgba(255,255,255,1)"} bold ml="6px">{`$${cakePriceUsd.toFixed(3)}`}</Text>
+      <Text color={"rgba(255,255,255,1)"} bold ml="6px">{`$${price}`}</Text>
     </PriceLink>
   ) : (
     <Skeleton width={80} height={24} />

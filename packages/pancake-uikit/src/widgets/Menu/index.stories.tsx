@@ -85,7 +85,7 @@ const defaultProps = {
   langs,
   setLang: noop,
   currentLang: "EN",
-  cakePriceUsd: 0.023158668932877668,
+  cakePriceUsd: 1320000.912,
   links,
   subLinks: (links && links[0] && links[0].items? links[0].items : [] ),
   footerLinks,
