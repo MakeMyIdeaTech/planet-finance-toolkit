@@ -48,6 +48,14 @@ object-assign
  * Released under the MIT License.
  */
 
+/*! @preserve
+ * numeral.js
+ * version : 2.0.6
+ * author : Adam Draper
+ * license : MIT
+ * http://adamwdraper.github.com/Numeral-js/
+ */
+
 /*! axe v4.3.1
  * Copyright (c) 2021 Deque Systems, Inc.
  *
